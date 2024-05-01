@@ -16,7 +16,6 @@ import flag4 from "../../assets/teams/f2.webp";
 import flag5 from "../../assets/teams/f3.webp";
 
 const Story: React.FC = () => {
-  // const img1 = 'your-image-src.jpg'; // Replace 'your-image-src.jpg' with the actual image source
   const item = [
     {
       image: img1,
@@ -67,7 +66,7 @@ const Story: React.FC = () => {
     // Add more items as needed
   ];
   return (
-    <Box sx={{ textAlign: "center", width: "70%", margin: "auto" }}>
+    <Box sx={{ textAlign: "center", width: "80%", margin: "auto" }}>
       <Typography
         variant="h2"
         sx={{ fontWeight: "400", padding: "10px", marginBottom: "0" }}

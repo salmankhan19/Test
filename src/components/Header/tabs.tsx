@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Box, Typography, useMediaQuery, Grid } from "@mui/material";
+import { Box, Typography, useMediaQuery, Grid } from "@mui/material";
 import PhoneIcon from "@mui/icons-material/Phone";
 import img1 from "../../assets/c1.jpg";
 import img2 from "../../assets/c2.jpeg";
@@ -47,7 +47,7 @@ const cardData: { [key: string]: CardData[] } = {
   ],
 };
 
-const RenderCard: React.FC<{ buttonKey?: string }> = ({ buttonKey }) => {
+const RenderCard: React.FC<{ buttonKey?: string }> = ({ }) => {
   const [activeButton, setActiveButton] = useState<string | null>("button1");
   const [hoveredButton, setHoveredButton] = useState<any | null>(null);
 
@@ -223,7 +223,7 @@ const RenderCard: React.FC<{ buttonKey?: string }> = ({ buttonKey }) => {
                 maxWidth: isMobile ? "220px" : "auto",
               }}
             >
-              {cardData[activeButton].map((card, index) => (
+              {cardData[activeButton].map((card) => (
                 <Grid sm={12} md={4} lg={3}>
                   <Box
                     width={220}
