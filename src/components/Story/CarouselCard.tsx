@@ -29,6 +29,12 @@ const CarouselCard: React.FC<CarouselCardProps> = ({ items }) => {
           slidesToShow: 1,
         },
       },
+      {
+        breakpoint: 850, // Adjust this breakpoint according to your needs
+        settings: {
+          slidesToShow: 2,
+        },
+      },
     ],
   };
 
