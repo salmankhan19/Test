@@ -1,0 +1,30 @@
+.header{
+    /* flex-wrap: var(--flex-wrap); */
+    justify-content: Center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    /* width: 80%; */
+}
+.line{
+    padding: 15px;
+    font-family: "Sharp Grotesk", Sans-serif;
+    font-size: 18px;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    line-height: 1em !important;
+    text-align: center !important;
+}
+/* Tabs.module.css */
+.tab {
+    min-width: 100px;
+    margin-right: 20px;
+  }
+  
+  .tabContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  

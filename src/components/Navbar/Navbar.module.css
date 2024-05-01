@@ -1,0 +1,17 @@
+/* Navbar.module.css */
+.root {
+    flex-grow: 1;
+  }
+  
+  .title {
+    flex-grow: 1;
+  }
+  
+  .menuButton {
+    margin-right: 8px; /* You can adjust the margin as needed */
+  }
+  
+  .drawer {
+    width: 200px;
+  }
+  
