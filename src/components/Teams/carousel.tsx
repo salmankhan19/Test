@@ -18,6 +18,32 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
     autoplay: true,
     autoplaySpeed: 0, // Set autoplaySpeed to 0 to immediately transition to the next slide
     cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 400, // Adjust this breakpoint according to your needs
+        settings: {
+          slidesToShow: 2 ,
+        },
+      },
+      {
+        breakpoint: 768, // Adjust this breakpoint according to your needs
+        settings: {
+          slidesToShow: 3 ,
+        },
+      },
+      {
+        breakpoint: 950, // Adjust this breakpoint according to your needs
+        settings: {
+          slidesToShow: 5 ,
+        },
+      },
+      {
+        breakpoint: 1250, // Adjust this breakpoint according to your needs
+        settings: {
+          slidesToShow: 6 ,
+        },
+      },
+    ],
   };
 
   return (
@@ -27,8 +53,8 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
           {images.map((image, index) => (
             <div key={index}>
               <img
-                width={100}
-                height={100}
+                width={90}
+                height={90}
                 src={image}
                 alt={`slide-${index}`}
               />

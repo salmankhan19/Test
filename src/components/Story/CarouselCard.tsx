@@ -22,9 +22,14 @@ const CarouselCard: React.FC<CarouselCardProps> = ({ items }) => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    // autoplay: true,
-    // autoplaySpeed: 3000,
-    // cssEase: 'linear',
+    responsive: [
+      {
+        breakpoint: 768, // Adjust this breakpoint according to your needs
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   return (
